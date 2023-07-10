@@ -15,5 +15,6 @@ class Transfer extends Model
         'origemId',
         'destinoId',
         'valor',
+        'descricao',
     ];
 }

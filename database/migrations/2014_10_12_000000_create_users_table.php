@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('password');
             $table->decimal('saldo', 9, 2, true);
             $table->string('conta')->unique();
-            $table->decimal('saldoAtual', 9, 2, true);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -2,7 +2,7 @@
     @if (Route::has('login'))
     <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
         @auth
-        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Painel de controle</a>
         @else
         <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Login</a>
 
@@ -49,7 +49,7 @@
 
         <!-- Saldo -->
         <div class="mt-4">
-            <x-input-label for="saldo" :value="__('Saldo')" />
+            <x-input-label for="saldo" :value="__('Depósito Inicial')" />
             <x-text-input id="saldo" class="block mt-1 w-full" type="text" name="saldo" :value="old('saldo')" required autofocus autocomplete="saldo" />
             <x-input-error :messages="$errors->get('saldo')" class="mt-2" />
         </div>

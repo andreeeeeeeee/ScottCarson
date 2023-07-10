@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('origemId')->constrained(table: 'users', column: 'id')->onDelete('cascade');
             $table->foreignId('destinoId')->constrained(table: 'users', column: 'id')->onDelete('cascade');
             $table->decimal('valor', 10, 2, true);
+            $table->string('descricao');
             $table->timestamps();
         });
     }
